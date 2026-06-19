@@ -59,7 +59,7 @@ body {
 }
 
 .botao-menu {
-    flex-direction: 1;
+    flex: 1;
     padding: 15px;
     border: none;
     color: white;
@@ -68,4 +68,90 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: filter 0.2s, transform 0.1s;
+}
+
+.botao-menu:hover {
+    filter: brightness(0.9);
+    transform: translateY(-2px);
+}
+
+.azul { background-color: #3498db;}
+.verde { background-color: #2ecc71;}
+.roxo { background-color: #9b59b6;}
+
+.abas-sistema {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.abas-sistema input[type="radio"] {
+    display: none;
+}
+
+.abas-sistema label {
+    padding: 10px 20px;
+    background: #e0e0e0;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    margin-right: 4px;
+}
+
+.abas-sistema input[type="radio"]:checked + label {
+    background: #0076a3;
+    color: white;
+}
+
+.aba-conteudo {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    order: 1;
+    display: none;
+    border-radius: 0 5px 5px 5px;
+}
+
+.abas-sistema input[type="radio"]:checked + label + .aba-conteudo {
+    display: block;
+}
+
+.fundo-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.fundo-popup:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.janela-popup {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.botao-fechar { 
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
