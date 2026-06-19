@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Portal de Matemática - 3º ano C</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!--Banner principal-->
+        <div class="banner">
+            <div class="banner-conteudo">
+                <h1> Conectando Matemática e Tecnologia</h1>
+                <p>Espaço digital da engenharia e ciências da natureza</p>
+                <!--Botão interativo que abre o pop-up-->
+                <a href="#popup-aviso" class="botao-banner">Ver aviso importante</a>
+            </div>
+        </div>
+
+        <!--Corpo do site(container)-->
+        <div class="container">
+
+            <!--Serie de botões-->
+            <div class="grade-botoes">
+                <button class="botao-menuazul">Geometria</button>
+                <button class="botao-menuverde">Algebra</button>
+                <button class="botao-menuroxo">Estatistica</button>
+            </div>
+
+            <hr>
+
+            <!--Sistema de abas em css-->
+            <h2>Conteúdos Disponíveis</h2>
+            <div class="abas-sistema">
+                <!--aba 1 -->
+                <imput type="radio" name="abas" id="aba1" checked>
+                    <label for="aba1">Semestre 1</label>
+                    <div class="aba-conteudo">
+                        <h3>Análise combinatória</h3>
+                        <p>Principio fundamental da contagem, permutações e combinações aplicadas.</p>
+                    </div>
+
+                    <!--Aba2-->
+                    <imput type="radio" name="abas" id="aba2">
+                        <label for="aba2">Semestre 2</label>
+                        <div class="aba-conteudo">
+                            <h3>Probabilidade</h3>
+                            <p>Calculo de chances, independentes e aplicações no cotidiano.</p>
+                        </div>
+                    </imput>
+                </imput>
+            </div>
+        </div>
+        <!--Pop-up-->
+        <div id="popup-aviso" class="fundo-popup">
+            <div class="janela-popup">
+                <h2>Aviso da turma</h2>
+                <p>Lembrete: a entrega do projeto desenvolvimento web vale nota parcial para o trimestre!</p>
+                <!--Botao de fechar-->
+                <a href="#" class="botao-fechar">Fechar aviso</a>
+            </div>
+        </div>
+    </body>
+</html>
